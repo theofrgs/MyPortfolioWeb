@@ -1,0 +1,59 @@
+version: "3.8"
+
+services:
+  development:
+    container_name: my_portfolio_web_dev
+    image: development
+    build:
+      context: .
+      target: development
+      dockerfile: ./Dockerfile
+    command: npm run start
+    ports:
+      - "8080:8080"
+    networks:
+      - my_portfolio
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    restart: unless-stopped
+
+  test:
+    container_name: my_portfolio_web_test
+    image: test
+    build:
+      context: .
+      target: test
+      dockerfile: ./Dockerfile
+    command: npm run test
+    ports:
+      - "3000:3000"
+    networks:
+      - my_portfolio
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+
+  production:
+    container_name: my_portfolio_web_prod
+    image: production
+    build:
+      context: .
+      target: production
+      dockerfile: ./Dockerfile
+    command: npm run start
+    ports:
+      - "8080:8080"
+    networks:
+      - my_portfolio
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    restart: always
+
+volumes:
+  database:
+
+networks:
+  my_portfolio:
+    driver: bridge
