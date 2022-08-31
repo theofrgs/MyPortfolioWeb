@@ -1,0 +1,21 @@
+name: ReactJS build
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install all dependencies
+        run: npm install
+      - name: Build
+        run: |
+            npm run prebuild --if-present
+            npm run build --if-present

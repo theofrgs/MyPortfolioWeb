@@ -1,0 +1,37 @@
+name: Launch Tests
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+
+jobs:
+  UnitTests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install all dependencies
+        run: npm install
+      - name: Build
+        run: |
+          npm run prebuild --if-present
+          npm run build --if-present
+      - name: Create directory for artifacts
+        run: mkdir -p artifact
+      - name: Run unit tests
+        run: npm run test 2> artifact/function-tests_outputs.txt 2>&1
+      - name: Run unit tests e2e
+        run: npm run test:e2e >> artifact/function-tests_outputs.txt 2>&1
+      - name: Get unit tests coverage
+        run: npm run test:cov >> artifact/function-tests_outputs.txt 2>&1
+      - name: Display unit results
+        if: ${{ always() }}
+        continue-on-error: true
+        run: cat artifact/function-tests_outputs.txt
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Units tests
+          path: artifact/
