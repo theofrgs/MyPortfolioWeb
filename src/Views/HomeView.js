@@ -4,7 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 import View from "./View"
 import Description from "./Components/Description"
-
+import HomeScrollerMagicScene from "./Components/HomeScrollerMagicScene"
 import styles from "./Styles/HomeStyles.css"
 
 const HeaderSocial = () => (
@@ -122,32 +122,29 @@ export default class HomeView extends View {
 
     pageRender() {
         return (
-            <div class="scroll-container">
-
-                <div >
-                    <CssBaseline />
-                    <Header />
-                    <ContactEmail />
-                    <HeaderSocial />
-                    <section>
-                        <div id="home">
-                            {/* <h2>Section 1</h2> */}
-                        </div>
-                    </section>
-                    <section>
-                        <div id="competences">
-                            {/* <h2>Section 2</h2> */}
-                        </div>
-                    </section>
-                    <section>
-                        <div id="experiences">
-                            {/* <h2>Section 3</h2> */}
-                        </div>
-                    </section>
-                    <section>
-                        <Description />
-                    </section>
-                </div >
+            <div >
+                <HomeScrollerMagicScene />
+                <div className="scroll-container">
+                    <div >
+                        <CssBaseline />
+                        <Header />
+                        <ContactEmail />
+                        <HeaderSocial />
+                        <section>
+                            <Description />
+                        </section>
+                        <section>
+                            <div id="competences">
+                                {/* <h2>Section 2</h2> */}
+                            </div>
+                        </section>
+                        <section>
+                            <div id="experiences">
+                                {/* <h2>Section 3</h2> */}
+                            </div>
+                        </section>
+                    </div >
+                </div>
             </div>
         )
     }
