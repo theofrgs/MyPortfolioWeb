@@ -1,11 +1,9 @@
 import React, { useRef } from "react";
 
 import { Box, CssBaseline } from "@mui/material";
-import ReactDOM from "react-dom";
 
-import { Controller, Scene } from "react-scrollmagic";
-
-import styles from "../Styles/HomeScollerMagicStyles.css"
+import { Controller, Scene, PinSettings } from "react-scrollmagic";
+import "../Styles/HomeStyles.css"
 
 const imgCache = {
     __cache: {},
@@ -38,25 +36,12 @@ function WrappedComponent({ props }) {
     const ref = useRef();
     return (
         <Controller>
-            <Scene duration="400%" triggerHook="onLeave" pin>
+            <Scene duration="100%" triggerHook="onLeave" pinSettings={{ spacerClass: "adsza" }}>
                 {progress => {
                     var i = Math.round(progress * 1 * 49);
                     return (
-                        <div style={{ height: "100vh", position: "relative" }}>
-                            {/* <img
-                                ref={ref}
-                                key={i}
-                                style={{
-                                    display: "block",
-                                    height: "100%",
-                                    width: "100%",
-                                    backgroundImage: `url('${props.pictures[i]}')`,
-                                    backgroundSize: "cover",
-                                    backgroundPosition: "center"
-                                }}
-                            /> */}
-
-                            <SuspenseImg ref={ref} alt="" style={{
+                        <div style={{ height: "100vh", position: "relative" }} ref={ref}>
+                            <SuspenseImg alt="" style={{
                                 display: "block",
                                 height: "100%",
                                 width: "100%",
@@ -105,16 +90,14 @@ export default class HomeScrollerMagicScene extends React.Component {
         });
         await cachImg(this.pictures)
         this.setState({ load: true })
-        console.log(this.state.load)
         this.forceUpdate()
     }
 
 
     render() {
-        console.log(this.state.load)
         return (
             <div id="home" >
-                {/* <CssBaseline /> */}
+                <CssBaseline />
                 {this.state.load ?
                     <div>
                         <WrappedComponent props={{ pictures: this.pictures }} />

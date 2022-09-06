@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import View from "./View"
 import Description from "./Components/Description"
 import HomeScrollerMagicScene from "./Components/HomeScrollerMagicScene"
-import styles from "./Styles/HomeStyles.css"
+import "./Styles/HomeStyles.css"
 
 const HeaderSocial = () => (
     <div style={{
@@ -124,7 +124,7 @@ export default class HomeView extends View {
         return (
             <div >
                 <HomeScrollerMagicScene />
-                
+
             </div>
         )
     }
