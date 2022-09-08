@@ -2,7 +2,6 @@ import { IconButton, Stack, Box, Button, CssBaseline } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-import View from "./View"
 import Description from "./Components/Description"
 import HomeScrollerMagicScene from "./Components/HomeScrollerMagicScene"
 import "./Styles/HomeStyles.css"
@@ -118,35 +117,35 @@ const Header = () => (
     </Box >
 )
 
-export default class HomeView extends View {
+const HomeView = () => {
 
-    pageRender() {
-        return (
-            <div >
-                <HomeScrollerMagicScene />
-                <div className="scroll-container">
-                    <div >
-                        <CssBaseline />
-                        <Header />
-                        <ContactEmail />
-                        <HeaderSocial />
+    return (
+        <div >
+            <HomeScrollerMagicScene />
+            <div className="scroll-container">
+                <div >
+                    <CssBaseline />
+                    <Header />
+                    <ContactEmail />
+                    <HeaderSocial />
 
-                        <section>
-                            <Description />
-                        </section>
-                        <section>
-                            <div id="competences">
-                                {/* <h2>Section 2</h2> */}
-                            </div>
-                        </section>
-                        <section>
-                            <div id="experiences">
-                                {/* <h2>Section 3</h2> */}
-                            </div>
-                        </section>
-                    </div >
-                </div>
+                    <section>
+                        <Description />
+                    </section>
+                    <section>
+                        <div id="competences">
+                            {/* <h2>Section 2</h2> */}
+                        </div>
+                    </section>
+                    <section>
+                        <div id="experiences">
+                            {/* <h2>Section 3</h2> */}
+                        </div>
+                    </section>
+                </div >
             </div>
-        )
-    }
+        </div>
+    )
 }
+
+export default HomeView

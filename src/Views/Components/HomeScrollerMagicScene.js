@@ -36,7 +36,7 @@ function WrappedComponent({ props }) {
     const ref = useRef();
     return (
         <Controller>
-            <Scene duration="100%" triggerHook="onLeave" pinSettings={{ spacerClass: "adsza" }}>
+            <Scene duration="400%" triggerHook="onLeave" pinSettings={{ spacerClass: "adsza" }}>
                 {progress => {
                     var i = Math.round(progress * 1 * 49);
                     return (
