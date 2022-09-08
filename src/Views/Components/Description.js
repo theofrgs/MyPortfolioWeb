@@ -9,7 +9,7 @@ export default class Description extends React.Component {
 
     render() {
         return (
-            <div id="description" >
+            <div id="description" style={{width: '100%'}}>
                 <CssBaseline />
                 <Box sx={{ justifyContent: 'center', display: 'flex', width: '100%', backgroundColor: 'black', height: "100vh", }}>
                     <Box sx={{ justifyContent: 'center', display: 'flex', flexDirection: 'column', alignContent: 'left', width: '60%', /* backgroundColor: "red", */ color: "white" }}>
