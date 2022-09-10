@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 
-import { Box, CssBaseline } from "@mui/material";
+import { CssBaseline } from "@mui/material";
 
-import { Controller, Scene, PinSettings } from "react-scrollmagic";
+import { Controller, Scene } from "react-scrollmagic";
 import "../Styles/HomeStyles.css"
 
 const imgCache = {
@@ -29,7 +29,7 @@ const imgCache = {
 
 export const SuspenseImg = ({ src, ...rest }) => {
     imgCache.read(src);
-    return <img src={src} {...rest} />;
+    return <img src={src} {...rest} alt="..." />;
 };
 
 function WrappedComponent({ props }) {
