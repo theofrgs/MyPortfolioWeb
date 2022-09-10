@@ -1,21 +1,8 @@
-import React from 'react';
-import { Route, Routes } from "react-router-dom";
-import { withCookies } from "react-cookie";
-
-// Views
+import './App.css';
 import HomeView from "./Views/HomeView";
 
-class App extends React.Component {
-
-    render() {
-        return (
-            <div>
-                <Routes>
-                    <Route path='/' element={<HomeView />} />
-                </Routes>
-            </div>
-        );
-    }
+function App() {
+    return <HomeView />
 }
 
-export default withCookies(App);
+export default App;
