@@ -1,9 +1,8 @@
 import * as React from 'react';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import SchoolIcon from '@mui/icons-material/School';
 import AndroidIcon from '@mui/icons-material/Android';
 import FeedIcon from '@mui/icons-material/Feed';
-import { Box, CssBaseline } from "@mui/material";
+import { Box } from "@mui/material";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -33,7 +32,7 @@ const TimeData = ({ icon, img, primaireColor, secondColor, jobData }) => {
 }
 
 const Experiences = () => {
-    const [showMore, setShowMore] = React.useState(true)
+    const [showMore] = React.useState(true)
 
     return (
         <div id="experiences" style={{ width: '100%', backgroundColor: "black" }}>
@@ -46,7 +45,7 @@ const Experiences = () => {
                             icon={<SchoolIcon />}
                             primaireColor="rgb(33, 150, 243)"
                             secondColor='#fff'
-                            img={<img style={{ width: "70px" }} src="epitech_logo.png"></img>}
+                            img={<img style={{ width: "70px" }} src="epitech_logo.png" alt="img"></img>}
                             jobData={{
                                 title: "Étudiant en quatrième année",
                                 company: "Epitech, San Francisco",
@@ -58,7 +57,7 @@ const Experiences = () => {
                             icon={<AndroidIcon />}
                             primaireColor="#fff"
                             secondColor='black'
-                            img={<img style={{ width: "70px" }} src="berny_logo.png"></img>}
+                            img={<img style={{ width: "70px" }} src="berny_logo.png" alt="img"></img>}
                             jobData={{
                                 title: "Stage dévelopeur fullstack",
                                 company: "Berny, Nantes",
@@ -71,7 +70,7 @@ const Experiences = () => {
                                 icon={<FeedIcon />}
                                 primaireColor="rgb(255, 87, 51)"
                                 secondColor='#fff'
-                                img={<img style={{ width: "70px" }} src="algodata_logo.png"></img>}
+                                img={<img style={{ width: "70px" }} src="algodata_logo.png" alt="img"></img>}
                                 jobData={{
                                     title: "Stage dévelopeur 4D",
                                     company: "Algodata, Nantes",
