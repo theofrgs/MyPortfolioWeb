@@ -40,7 +40,7 @@ const Experiences = () => {
                 <Box sx={{ justifyContent: 'center', display: 'flex', flexDirection: 'column', alignContent: 'left', width: '60%', /* backgroundColor: "red", */ color: "white" }}>
                     Mes expériences
                     <Box sx={{ height: '10px' }} />
-                    <VerticalTimeline>
+                    <VerticalTimeline animate={false}>
                         <TimeData
                             icon={<SchoolIcon />}
                             primaireColor="rgb(33, 150, 243)"
