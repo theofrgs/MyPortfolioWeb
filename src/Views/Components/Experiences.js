@@ -1,6 +1,8 @@
 import * as React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import SchoolIcon from '@mui/icons-material/School';
 import AndroidIcon from '@mui/icons-material/Android';
+import FeedIcon from '@mui/icons-material/Feed';
 import { Box, CssBaseline } from "@mui/material";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -31,7 +33,7 @@ const TimeData = ({ icon, img, primaireColor, secondColor, jobData }) => {
 }
 
 const Experiences = () => {
-    const [showMore, setShowMore] = React.useState(false)
+    const [showMore, setShowMore] = React.useState(true)
 
     return (
         <div id="experiences" style={{ width: '100%', backgroundColor: "black" }}>
@@ -41,13 +43,13 @@ const Experiences = () => {
                     <Box sx={{ height: '10px' }} />
                     <VerticalTimeline>
                         <TimeData
-                            icon={<AndroidIcon />}
+                            icon={<SchoolIcon />}
                             primaireColor="rgb(33, 150, 243)"
                             secondColor='#fff'
-                            img={<img style={{ width: "70px" }} src="berny_logo.png"></img>}
+                            img={<img style={{ width: "70px" }} src="epitech_logo.png"></img>}
                             jobData={{
                                 title: "Étudiant en quatrième année",
-                                company: "San Francisco State University, Epitech, Nantes",
+                                company: "Epitech, San Francisco",
                                 date: "Octobre 2019 - présent",
                                 description: "Actuellement en 4ème année à San Francisco State University. Développement d'applications, participation à plusieurs événements (DEVFEST, DEVPARTY, HASHCODE Google, Epitech JAM), projet gagnant avec la marque Mugler. Création de projets Web et Mobile avec React, Flutter, NodeJs, Java. Création d'algorithmes et de projets. Participation à plusieurs événements (DEVPARTY, HASHCODE google, Epitech JAM, projet Week Mugler). Création de projet en C++. Création d'un projet mathématique en Python. Pratique du DevOps (Github Action / JetKins/ Docker, Kubernetes)"
                                 // description: "Développeur Web / Mobile fullstack avec les technologies ReactJS / Flutter. Mise en place d'une api Flash en ligne avec un doplet. Développement d'une application mobile Flutter. Mise en place d'un serveur keycloak avec vérification d'email, numéro de téléphone, google, Facebook."
@@ -61,12 +63,12 @@ const Experiences = () => {
                                 title: "Stage dévelopeur fullstack",
                                 company: "Berny, Nantes",
                                 date: "Avril 2022 - Juillet 2022",
-                                description: "Développeur FullStack chez Berny, développement web (React JS, python), développement mobile (Flutter), développement cloud (Google cloud). J'ai également pu utiliser d'autre technologies tels que Kyecloak, Hasura, Heroku, GKE, Digital Ocean, "
+                                description: "Développeur FullStack chez Berny, développement web (React JS, python), développement mobile (Flutter), développement cloud (Google cloud). J'ai également pu utiliser d'autre technologies tels que Kyecloak, Hasura, Heroku, GKE, Digital Ocean."
                                 // description: "Développeur Web / Mobile fullstack avec les technologies ReactJS / Flutter. Mise en place d'une api Flash en ligne avec un doplet. Développement d'une application mobile Flutter. Mise en place d'un serveur keycloak avec vérification d'email, numéro de téléphone, google, Facebook."
                             }} />
                         {showMore &&
                             <TimeData
-                                icon={<AndroidIcon />}
+                                icon={<FeedIcon />}
                                 primaireColor="rgb(255, 87, 51)"
                                 secondColor='#fff'
                                 img={<img style={{ width: "70px" }} src="algodata_logo.png"></img>}
