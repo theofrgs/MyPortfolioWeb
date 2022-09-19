@@ -12,7 +12,7 @@ const Description = () => {
                     <Box>
                         <Box component="span" sx={{ display: 'flex', flexDirection: 'column', p: 2, width: '95%', borderWidth: '0.8px', borderColor: 'white', borderStyle: 'solid' }}>
                             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', }}>
-                                <img style={{ width: "10%" }} src="profil.png" alt="profil"/>
+                                <img style={{ width: "10%", height: "10%" }} src="profil.png" alt="profil"/>
                                 <Box sx={{width: "10%" }}/>
                                 <Box sx={{}}>
                                     Originaire de La Rochelle, j'ai ,durant trois ans, commencé mes études dans l'informatique chez Epitech à Nantes avant d'aller ma quatrième année à San Francisco pour commencer 2 semestres à l'étranger en Computer Science.
