@@ -3,6 +3,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 import Description from "./Components/Description"
+import Experiences from "./Components/Experiences"
 import HomeScrollerMagicScene from "./Components/HomeScrollerMagicScene"
 import "./Styles/HomeStyles.css"
 
@@ -40,7 +41,7 @@ const ContactEmail = () => (
         alignItems: "justify",
         whiteSpace: "nowrap",
         display: "flex",
-        backgroundColor: "black",
+        // backgroundColor: "black",
     }}>
         <Box style={{
             whiteSpace: "nowrap",
@@ -53,6 +54,7 @@ const ContactEmail = () => (
             flexDirection: "column",
             left: "3%",
         }}>
+            <Box style={{ height: 20 }} />
             <div style={{ color: "white" }}>Email: </div>
             <a href="mailto:theo.fargeas@epitech.eu" bis_skin_checked="1" style={{ color: "white" }}><p>theo.fargeas@epitech.eu</p></a>
             <Box style={{ height: 30 }} />
@@ -70,7 +72,7 @@ const Header = () => (
         alignItems: "justify",
         whiteSpace: "nowrap",
         display: "flex",
-        backgroundColor: "black",
+        // backgroundColor: "black",
     }}>
 
         <Box style={{
@@ -122,32 +124,27 @@ const HomeView = () => {
     return (
         <div >
             <HomeScrollerMagicScene />
-            <div className="scroll-container">
-                <div >
-                    <CssBaseline />
-                    <Header />
-                    <ContactEmail />
-                    <HeaderSocial />
-
+            <CssBaseline />
+            <Header />
+            <ContactEmail />
+            <HeaderSocial />
+            <section>
+                <Description />
+            </section>
+            {/* <div style={{ height: "40vh", backgroundColor: "black" }}></div> */}
+            <section>
+                <Experiences />
+            </section>
+            {false &&
+                <div>
                     <section>
-                        <Description />
-                    </section>
-                    {false &&
-                        <div>
-                            <section>
-                                <div id="competences">
-                                    {/* <h2>Section 2</h2> */}
-                                </div>
-                            </section>
-                            <section>
-                                <div id="experiences">
-                                    {/* <h2>Section 3</h2> */}
-                                </div>
-                            </section>
+                        <div id="experiences">
+                            {/* <h2>Section 3</h2> */}
                         </div>
-                    }
-                </div >
-            </div>
+                    </section>
+                </div>
+            }
+            <div style={{height: "100px", backgroundColor: "black", width: "100%"}}></div>
         </div>
     )
 }

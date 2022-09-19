@@ -34,11 +34,13 @@ export const SuspenseImg = ({ src, ...rest }) => {
 
 function WrappedComponent({ props }) {
     const ref = useRef();
+
     return (
         <Controller>
-            <Scene duration="400%" triggerHook="onLeave" pinSettings={{ spacerClass: "adsza" }}>
+            <Scene duration="200%" triggerHook="onLeave" pinSettings={{ spacerClass: "adsza" }}>
                 {progress => {
                     var i = Math.round(progress * 1 * 49);
+                    // 49 = max frame
                     return (
                         <div style={{ height: "100vh", position: "relative" }} ref={ref}>
                             <SuspenseImg alt="" style={{
