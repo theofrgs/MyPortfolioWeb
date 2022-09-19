@@ -32,7 +32,7 @@ const TimeData = ({ icon, img, primaireColor, secondColor, jobData }) => {
 }
 
 const Experiences = () => {
-    const [showMore] = React.useState(true)
+    const [showMore] = React.useState(false)
 
     return (
         <div id="experiences" style={{ width: '100%', backgroundColor: "black" }}>
