@@ -1,0 +1,110 @@
+{
+    "Langages": {
+        "Bash": {
+            "experiences": 50,
+            "point": 4
+        },
+        "C": {
+            "experiences": 48,
+            "point": 4
+        },
+        "Git": {
+            "experiences": 48,
+            "point": 4
+        },
+        "Python": {
+            "experiences": 48,
+            "point": 4
+        },
+        "C++": {
+            "experiences": 24,
+            "point": 4
+        },
+        "Haskell": {
+            "experiences": 6,
+            "point": 2
+        },
+        "HTML": {
+            "experiences": 24,
+            "point": 4
+        },
+        "CSS": {
+            "experiences": 24,
+            "point": 4
+        },
+        "Javascript": {
+            "experiences": 20,
+            "point": 4
+        },
+        "Typescript": {
+            "experiences": 20,
+            "point": 4
+        },
+        "NestJs": {
+            "experiences": 6,
+            "point": 4
+        },
+        "NodeJs": {
+            "experiences": 20,
+            "point": 4
+        },
+        "React": {
+            "experiences": 20,
+            "point": 4
+        },
+        "React-Native": {
+            "experiences": 6,
+            "point": 3
+        },
+        "Flutter": {
+            "experiences": 20,
+            "point": 3
+        },
+        "SwiftUI": {
+            "experiences": 2,
+            "point": 2
+        }
+    },
+    "Technologies": {
+        "Docker": {
+            "experiences": 24,
+            "point": 4
+        },
+        "Jenkins": {
+            "experiences": 4,
+            "point": 2
+        },
+        "Github": {
+            "experiences": 48,
+            "point": 4
+        },
+        "Devops ga": {
+            "experiences": 24,
+            "point": 3
+        },
+        "Database - Sql/NoSql": {
+            "experiences": 24,
+            "point": 3
+        },
+        "Google kubernetes engine": {
+            "experiences": 4,
+            "point": 3
+        },
+        "Google cloud run": {
+            "experiences": 4,
+            "point": 2
+        },
+        "Digital ocean": {
+            "experiences": 4,
+            "point": 3
+        },
+        "Hasura": {
+            "experiences": 4,
+            "point": 4
+        },
+        "Keycloak": {
+            "experiences": 4,
+            "point": 4
+        }
+    }
+}

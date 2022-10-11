@@ -4,6 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 import Description from "./Components/Description"
 import Experiences from "./Components/Experiences"
+import Competencies from "./Components/Competencies"
 import HomeScrollerMagicScene from "./Components/HomeScrollerMagicScene"
 import "./Styles/HomeStyles.css"
 
@@ -72,6 +73,7 @@ const Header = () => (
         alignItems: "justify",
         whiteSpace: "nowrap",
         display: "flex",
+        zIndex: 100,
         // backgroundColor: "black",
     }}>
 
@@ -107,7 +109,7 @@ const Header = () => (
                 <Button variant="text" style={{ textTransform: "none", scrollBehavior: "smooth" }} href="#description">
                     <h3 style={{ color: "white" }}>Mon parcours</h3>
                 </Button>
-                <Button variant="text" style={{ textTransform: "none" }} href="#competences">
+                <Button variant="text" style={{ textTransform: "none" }} href="#comptencies">
                     <h3 style={{ color: "white" }}>Mes compétences</h3>
                 </Button>
                 <Button variant="text" style={{ textTransform: "none" }} href="#experiences">
@@ -131,20 +133,13 @@ const HomeView = () => {
             <section>
                 <Description />
             </section>
-            {/* <div style={{ height: "40vh", backgroundColor: "black" }}></div> */}
+            <section>
+                <Competencies />
+            </section>
             <section>
                 <Experiences />
             </section>
-            {false &&
-                <div>
-                    <section>
-                        <div id="experiences">
-                            {/* <h2>Section 3</h2> */}
-                        </div>
-                    </section>
-                </div>
-            }
-            <div style={{height: "100px", backgroundColor: "black", width: "100%"}}></div>
+            <div style={{ height: "100px", backgroundColor: "black", width: "100%" }}></div>
         </div>
     )
 }

@@ -12,7 +12,7 @@ const TimeData = ({ icon, img, primaireColor, secondColor, jobData }) => {
             contentStyle={{ background: primaireColor, color: secondColor }}
             contentArrowStyle={{ borderRight: '7px solid ' + primaireColor }}
             date={jobData.date}
-            iconStyle={{ background: primaireColor, color: secondColor }}
+            iconStyle={{ background: primaireColor, color: secondColor, display: 'flex', justifyContent: 'center' }}
             icon={icon}
         >
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: "space-between", width: "100%" }}>
@@ -32,17 +32,21 @@ const TimeData = ({ icon, img, primaireColor, secondColor, jobData }) => {
 }
 
 const Experiences = () => {
-    const [showMore] = React.useState(true)
 
     return (
-        <div id="experiences" style={{ width: '100%', backgroundColor: "black" }}>
-            <Box sx={{ justifyContent: 'center', display: 'flex', width: '100%', backgroundColor: 'black', height: "100vh", }}>
-                <Box sx={{ justifyContent: 'center', display: 'flex', flexDirection: 'column', alignContent: 'left', width: '60%', /* backgroundColor: "red", */ color: "white" }}>
+        <div id="experiences" style={{ width: '100%', display: 'flex', justifyContent: 'center', backgroundColor: 'black' }}>
+            <Box sx={{ display: 'flex', width: '100%', justifyContent: 'center', marginTop: '20%' }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', alignContent: 'left', width: '60%', color: "white" }}>
                     Mes expériences
                     <Box sx={{ height: '10px' }} />
                     <VerticalTimeline animate={false}>
                         <TimeData
-                            icon={<SchoolIcon />}
+                            icon={
+                                // <SchoolIcon />
+                            <div></div>
+                                // <img style={{ width: "100%", height: "100%" }} src="epitech_logo.png" alt="img"></img>
+                                // <img style={{ width: "70px", }} src="berny_logo.png" alt="img"></img>
+                            }
                             primaireColor="rgb(33, 150, 243)"
                             secondColor='#fff'
                             img={<img style={{ width: "70px" }} src="epitech_logo.png" alt="img"></img>}
@@ -54,7 +58,11 @@ const Experiences = () => {
                                 // description: "Développeur Web / Mobile fullstack avec les technologies ReactJS / Flutter. Mise en place d'une api Flash en ligne avec un doplet. Développement d'une application mobile Flutter. Mise en place d'un serveur keycloak avec vérification d'email, numéro de téléphone, google, Facebook."
                             }} />
                         <TimeData
-                            icon={<AndroidIcon />}
+                            icon={
+                                // <AndroidIcon />
+                            <div></div>
+                                // <img style={{ width: "100%", height: "100%" }} src="berny_empty_logo.png" alt="img"></img>
+                            }
                             primaireColor="#fff"
                             secondColor='black'
                             img={<img style={{ width: "70px" }} src="berny_logo.png" alt="img"></img>}
@@ -65,19 +73,21 @@ const Experiences = () => {
                                 description: "Développeur FullStack chez Berny, développement web (React JS, python), développement mobile (Flutter), développement cloud (Google cloud). J'ai également pu utiliser d'autre technologies tels que Kyecloak, Hasura, Heroku, GKE, Digital Ocean."
                                 // description: "Développeur Web / Mobile fullstack avec les technologies ReactJS / Flutter. Mise en place d'une api Flash en ligne avec un doplet. Développement d'une application mobile Flutter. Mise en place d'un serveur keycloak avec vérification d'email, numéro de téléphone, google, Facebook."
                             }} />
-                        {showMore &&
-                            <TimeData
-                                icon={<FeedIcon />}
-                                primaireColor="rgb(255, 87, 51)"
-                                secondColor='#fff'
-                                img={<img style={{ width: "70px" }} src="algodata_logo.png" alt="img"></img>}
-                                jobData={{
-                                    title: "Stage dévelopeur 4D",
-                                    company: "Algodata, Nantes",
-                                    date: "Juillet 2020 - Décembre 2020",
-                                    description: "Développeur 4D, orienté objet"
-                                }} />
+                        <TimeData
+                            icon={
+                            // <FeedIcon />
+                            <div></div>
+                            // <img style={{ width: "100%", height: "100%" }} src="algodata_logo.png" alt="img"></img>
                         }
+                            primaireColor="rgb(255, 87, 51)"
+                            secondColor='#fff'
+                            img={<img style={{ width: "70px" }} src="algodata_logo.png" alt="img"></img>}
+                            jobData={{
+                                title: "Stage dévelopeur 4D",
+                                company: "Algodata, Nantes",
+                                date: "Juillet 2020 - Décembre 2020",
+                                description: "Développeur 4D, orienté objet"
+                            }} />
                     </VerticalTimeline>
                 </Box>
             </Box>

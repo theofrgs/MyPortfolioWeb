@@ -8,7 +8,7 @@ COPY public public
 
 COPY src src
 
-RUN npm install
+RUN npm install --force
 
 # Build
 RUN npm run build
@@ -27,7 +27,7 @@ COPY public public
 
 COPY src src
 
-RUN npm install
+RUN npm install --force
 
 # Build
 RUN npm run build
@@ -41,7 +41,7 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm install --only=development
+RUN npm install --force --only=development
 
 COPY . ./
 
