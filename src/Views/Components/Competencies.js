@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Box, CssBaseline } from "@mui/material";
 import data from './comptencies.json'
+import { Button } from 'semantic-ui-react'
 // import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
@@ -43,7 +44,7 @@ const ComptenciesLangComponents = ({ obj }) => {
 
     return (
         <Box sx={{ margin: '10px', display: 'flex', flexDirection: 'row', alignContent: 'left', justifyContent: "space-between", color: "white" }}>
-            <Box component="span" sx={{ minWidth:"300px", display: 'flex', flexDirection: 'column', p: 2, borderWidth: '0px', borderColor: 'white', borderStyle: 'solid' }}>
+            <Box component="span" sx={{ minWidth: "300px", display: 'flex', flexDirection: 'column', p: 2, borderWidth: '0px', borderColor: 'white', borderStyle: 'solid' }}>
                 - {obj[0]} ({years > 0 ? years : month} {years > 0 ? years > 1 ? "ans" : "an" : "mois"} {years > 0 && month > 0 ? month : ""} {years > 0 && month > 0 ? "mois" : ""})
             </Box>
             {/* <div style={{ width: 60, height: 60 }}>
@@ -63,6 +64,27 @@ const ComptenciesLangComponents = ({ obj }) => {
     )
 }
 
+const ListCompetencies = ({ it, data, key }) => {
+    const showDefaultValue = 5
+    const [show, setShow] = React.useState(showDefaultValue)
+
+    return (
+        <div key={key}>
+            {it[0]}
+            {Object.entries(data[it[0]]).slice(0, show).map((obj, keyData) => (
+                <ComptenciesLangComponents obj={obj} key={keyData} />
+            ))}
+            {Object.entries(data[it[0]]).length > showDefaultValue ?
+                <Box sx={{ justifyContent: 'center', display: 'flex', flexDirection: 'column', backgroundColor: 'black', color: 'white' }}>
+                    <div style={{ height: '10px' }} />
+                    <Button style={{margin: "auto"}} onClick={() => { show === showDefaultValue ? setShow(Object.entries(data[it[0]]).length) : setShow(showDefaultValue) }}
+                    > {show === showDefaultValue ? "+" : "-"} </Button>
+                </Box>
+                : null}
+        </div>
+    )
+}
+
 const Comptencies = () => {
 
     return (
@@ -75,7 +97,7 @@ const Comptencies = () => {
                     </Box>
                 </Box>
             </Box>
-            <Box sx={{  width: "80%", margin: '100px', display: 'flex', flexDirection: 'row', alignContent: 'left', justifyContent: "space-between", color: "white" }}>
+            <Box sx={{ width: "80%", margin: '100px', display: 'flex', flexDirection: 'row', alignContent: 'left', justifyContent: "space-between", color: "white" }}>
                 <Box component="span" sx={{ display: 'flex', flexDirection: 'column', p: 2, borderWidth: '0.8px', borderColor: 'white', borderStyle: 'solid' }}>
                     Création de projets Web et Mobile avec React, Flutter, NodeJs, Java
                     <div />
@@ -89,12 +111,7 @@ const Comptencies = () => {
                 </Box>
                 <Box component="span" sx={{ display: 'flex', flexDirection: 'column', p: 2, borderWidth: '0.8px', borderColor: 'white', borderStyle: 'solid' }}>
                     {Object.entries(data).slice(0, 5).map((it, key) => (
-                        <div key={key}>
-                            {it[0]}
-                            {Object.entries(data[it[0]]).map((obj, keyData) => (
-                                <ComptenciesLangComponents obj={obj} key={keyData} />
-                            ))}
-                        </div>
+                        <ListCompetencies data={data} key={key} it={it} />
                     ))}
                 </Box>
             </Box>
