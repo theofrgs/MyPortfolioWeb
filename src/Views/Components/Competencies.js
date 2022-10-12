@@ -21,15 +21,15 @@ const ComptenciesLangComponents = ({ obj }) => {
 
 
     const containerStyles = {
-        height: 25,
+        height: 10,
         width: '250px',
-        backgroundColor: "#e0e0de",
+        backgroundColor: "black",
         borderRadius: 50,
         margin: 20
     }
 
     const fillerStyles = {
-        height: '100%',
+        height: '230%',
         width: `${percentage}%`,
         backgroundColor: color,
         borderRadius: 'inherit',
@@ -43,7 +43,7 @@ const ComptenciesLangComponents = ({ obj }) => {
     }
 
     return (
-        <Box sx={{ margin: '10px', display: 'flex', flexDirection: 'row', alignContent: 'left', justifyContent: "space-between", color: "white" }}>
+        <Box sx={{ margin: '10px', display: 'flex', flexDirection: 'row', alignContent: 'left', justifyContent: "space-between", color: "white",  }}>
             <Box component="span" sx={{ minWidth: "300px", display: 'flex', flexDirection: 'column', p: 2, borderWidth: '0px', borderColor: 'white', borderStyle: 'solid' }}>
                 - {obj[0]} ({years > 0 ? years : month} {years > 0 ? years > 1 ? "ans" : "an" : "mois"} {years > 0 && month > 0 ? month : ""} {years > 0 && month > 0 ? "mois" : ""})
             </Box>
