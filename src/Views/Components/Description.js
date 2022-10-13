@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { Box, CssBaseline } from "@mui/material";
+import "../Styles/style.css"
 
 const Description = () => {
     return (
-        <div id="description" style={{ width: '100%', height: "100vh", display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'black', }}>
+        <div id="description" className="description">
             <CssBaseline />
             <Box sx={{ justifyContent: 'center', display: 'flex', width: '100%', backgroundColor: 'black', }}>
                 <Box sx={{ justifyContent: 'center', display: 'flex', flexDirection: 'column', alignContent: 'left', width: '60%', /* backgroundColor: "red", */ color: "white" }}>

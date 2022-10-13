@@ -4,7 +4,7 @@ import data from './comptencies.json'
 import { Button } from 'semantic-ui-react'
 // import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-
+import "../Styles/style.css"
 
 const ComptenciesLangComponents = ({ obj }) => {
     var percentage = obj[1]["point"] * 25
@@ -88,7 +88,7 @@ const ListCompetencies = ({ it, data, key }) => {
 const Comptencies = () => {
 
     return (
-        <div id="comptencies" style={{ width: '100%', minHeight: "100vh", display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', backgroundColor: 'black', }}>
+        <div id="comptencies" className='comptencies'>
             <CssBaseline />
             <Box sx={{ justifyContent: 'center', display: 'flex', flexDirection: 'column', backgroundColor: 'black', color: 'white' }}>
                 <Box sx={{ justifyContent: 'center', display: 'flex', flexDirection: 'column', alignContent: 'left',  /* backgroundColor: "red", */ color: "white" }}>
