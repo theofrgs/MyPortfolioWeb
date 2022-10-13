@@ -1,7 +1,7 @@
 import * as React from 'react';
-import SchoolIcon from '@mui/icons-material/School';
-import AndroidIcon from '@mui/icons-material/Android';
-import FeedIcon from '@mui/icons-material/Feed';
+// import SchoolIcon from '@mui/icons-material/School';
+// import AndroidIcon from '@mui/icons-material/Android';
+// import FeedIcon from '@mui/icons-material/Feed';
 import { Box } from "@mui/material";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';

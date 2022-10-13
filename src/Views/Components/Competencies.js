@@ -43,7 +43,7 @@ const ComptenciesLangComponents = ({ obj }) => {
     }
 
     return (
-        <Box sx={{ margin: '10px', display: 'flex', flexDirection: 'row', alignContent: 'left', justifyContent: "space-between", color: "white",  }}>
+        <Box sx={{ margin: '10px', display: 'flex', flexDirection: 'row', alignContent: 'left', justifyContent: "space-between", color: "white", }}>
             <Box component="span" sx={{ minWidth: "300px", display: 'flex', flexDirection: 'column', p: 2, borderWidth: '0px', borderColor: 'white', borderStyle: 'solid' }}>
                 - {obj[0]} ({years > 0 ? years : month} {years > 0 ? years > 1 ? "ans" : "an" : "mois"} {years > 0 && month > 0 ? month : ""} {years > 0 && month > 0 ? "mois" : ""})
             </Box>
@@ -77,7 +77,7 @@ const ListCompetencies = ({ it, data, key }) => {
             {Object.entries(data[it[0]]).length > showDefaultValue ?
                 <Box sx={{ justifyContent: 'center', display: 'flex', flexDirection: 'column', backgroundColor: 'black', color: 'white' }}>
                     <div style={{ height: '10px' }} />
-                    <Button style={{margin: "auto"}} onClick={() => { show === showDefaultValue ? setShow(Object.entries(data[it[0]]).length) : setShow(showDefaultValue) }}
+                    <Button style={{ margin: "auto" }} onClick={() => { show === showDefaultValue ? setShow(Object.entries(data[it[0]]).length) : setShow(showDefaultValue) }}
                     > {show === showDefaultValue ? "+" : "-"} </Button>
                 </Box>
                 : null}
@@ -98,16 +98,18 @@ const Comptencies = () => {
                 </Box>
             </Box>
             <Box sx={{ width: "80%", margin: '100px', display: 'flex', flexDirection: 'row', alignContent: 'left', justifyContent: "space-between", color: "white" }}>
-                <Box component="span" sx={{ display: 'flex', flexDirection: 'column', p: 2, borderWidth: '0.8px', borderColor: 'white', borderStyle: 'solid' }}>
-                    Création de projets Web et Mobile avec React, Flutter, NodeJs, Java
+                <Box component="span" sx={{ display: 'flex', flexDirection: 'column', p: 2, borderWidth: '0.8px', borderColor: 'white', borderStyle: 'solid',justifyContent: "center" }}>
+                    Actuellement en 4 années à Epitech, je suis à San Francisco State University en Computer Science.
+                    <div style={{height: "30px"}}/>
+                    En première année à Epitech, la majorité des projets sont développés en C, l'intégralité de mes projets mathématiques ont été développer en Python. J'ai également eu l'occasion de créer plusieurs VM.
+                    <div style={{height: "30px"}}/>
+                    Lors de la seconde année à Epitech, on apprend la programation orientée Objet, cet apprentissage est passé essentiellement à travers le C++, mais j'ai l'opportunitée de découvrir d'autre langage à travers divers projets Haskell, Python, Docker, React.
+                    <div style={{height: "30px"}}/>
+                    La troisième année à Epitech est basé sur la diversification, j'ai ainsi l'occasion de créer des projets assez complets , création de sites web avec la stack React/JS Dockerisé avec un Backend en NodeJs, serveur vocal en C++, application Mobile en Flutter. J'ai également pu apprendre d'autre framerwork backend comme NestJs, Flask.
+                    <div style={{height: "30px"}}/>
+                    Durant la troisième année j'ai eu la chance de faire un stage de 4 mois chez Berny, ou j'ai travaillé sur un dashboard en react js avec un back en flask, sur plusieurs applications mobile en flutter.
                     <div />
-                    Création d'algorithmes et de projets.
-                    <div />
-                    Participation à plusieurs événements (DEVPARTY, HASHCODE google, Epitech JAM, projet Week Mugler).
-                    <div />
-                    Création de projet en C++. Création d'un projet mathématique en Python.
-                    <div />
-                    Pratique du DevOps (Github Action / JetKins/ Docker, Kubernetes)
+                    Durant l'intégralité de ma scolarité la majorité de mes projets étaient Dockerisés, tester, avec des github action et des tests unitaires.
                 </Box>
                 <Box component="span" sx={{ display: 'flex', flexDirection: 'column', p: 2, borderWidth: '0.8px', borderColor: 'white', borderStyle: 'solid' }}>
                     {Object.entries(data).slice(0, 5).map((it, key) => (
