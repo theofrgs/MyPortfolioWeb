@@ -5,6 +5,7 @@ import * as React from 'react';
 import { Box } from "@mui/material";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import "../Styles/style.css"
 
 const TimeData = ({ icon, img, primaireColor, secondColor, jobData }) => {
     return (
@@ -34,7 +35,7 @@ const TimeData = ({ icon, img, primaireColor, secondColor, jobData }) => {
 const Experiences = () => {
 
     return (
-        <div id="experiences" style={{ width: '100%', display: 'flex', justifyContent: 'center', backgroundColor: 'black' }}>
+        <div id="experiences" className='experiences'>
             <Box sx={{ display: 'flex', width: '100%', justifyContent: 'center', marginTop: '20%' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignContent: 'left', width: '60%', color: "white" }}>
                     Mes expériences

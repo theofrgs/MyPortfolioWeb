@@ -43,12 +43,12 @@ function WrappedComponent({ props }) {
                     // 49 = max frame
                     return (
                         <div style={{ height: "100vh", position: "relative" }} ref={ref}>
-                            <SuspenseImg alt="" style={{
+                            <SuspenseImg style={{
                                 display: "block",
-                                height: "100%",
+                                // height: "100%",
                                 width: "100%",
-                                backgroundImage: `url('${props.pictures[i]}')`,
-                                backgroundSize: "cover",
+                                // backgroundImage: `url('${props.pictures[i]}')`,
+                                // backgroundSize: "cover",
                                 backgroundPosition: "center"
                             }} src={props.pictures[i]} />
                         </div>
@@ -98,7 +98,7 @@ export default class HomeScrollerMagicScene extends React.Component {
 
     render() {
         return (
-            <div id="home" >
+            <div id="home" style={{backgroundColor: "black"}}>
                 <CssBaseline />
                 {this.state.load ?
                     <div>

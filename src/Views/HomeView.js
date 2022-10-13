@@ -7,16 +7,10 @@ import Experiences from "./Components/Experiences"
 import Competencies from "./Components/Competencies"
 import HomeScrollerMagicScene from "./Components/HomeScrollerMagicScene"
 import "./Styles/HomeStyles.css"
+import "./Styles/style.css"
 
 const HeaderSocial = () => (
-    <div style={{
-        position: "fixed",
-        bottom: "0",
-        width: "100%",
-        alignItem: "right",
-        display: "flex",
-        justifyContent: "flex-end",
-    }}>
+    <div className='header-social'>
         <div style={{ width: "fit-content" }}>
             <Stack direction="column" spacing={2} display="flex" justify="right" alignitem="right" color="white">
                 <IconButton color="primary" href="https://github.com/theofrgs/" target="_blank" justify="left" alignitem="left">
@@ -33,17 +27,7 @@ const HeaderSocial = () => (
 )
 
 const ContactEmail = () => (
-    <Box sx={{}} style={{
-        margin: 0,
-        position: "fixed",
-        bottom: 0,
-        width: "100%",
-        justifyContent: "space-between",
-        alignItems: "justify",
-        whiteSpace: "nowrap",
-        display: "flex",
-        // backgroundColor: "black",
-    }}>
+    <Box sx={{}} className="contact-email">
         <Box style={{
             whiteSpace: "nowrap",
             justifyContent: "left",
