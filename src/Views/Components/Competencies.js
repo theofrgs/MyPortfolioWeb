@@ -64,12 +64,12 @@ const ComptenciesLangComponents = ({ obj }) => {
     )
 }
 
-const ListCompetencies = ({ it, data, key }) => {
+const ListCompetencies = ({ it, data }) => {
     const showDefaultValue = 5
     const [show, setShow] = React.useState(showDefaultValue)
 
     return (
-        <div key={key}>
+        <div>
             {it[0]}
             {Object.entries(data[it[0]]).slice(0, show).map((obj, keyData) => (
                 <ComptenciesLangComponents obj={obj} key={keyData} />
