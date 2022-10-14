@@ -1,0 +1,14 @@
+Originaire de La Rochelle, j'ai fais mes trois première années d'études en informatique chez Epitech à Nantes avant d'aller effectuer ma quatrième année à san francsico et validé ainsi deux semestres à l'étranger en computer Science
+
+
+J'ai effectue plusieurs stages durant cette première période d'études supérieures, un premier de six mois en développement 4D chez AlgoData en deuxième année puis un second de quatre mois chez Berny en fin de troisième année.
+
+Détenteur d'un bachelor je suis développeur fullstack, principalement web avec la stack React/Js, je possède également 4 mois d'expérience dans le développement mobile en Flutter. Durant mon cursus chez Epitech j'ai eu l'opportunité de travailler avec d'autres langages tels que le C++, le C, le python, le haskell, le java ou bien le bash. Mes années à Epitech m'ont permis de gagner en autonomie et également appris à travailler en équipe grâce à de nombreux projets de groupe.
+
+
+Actuellement en quatrième années à Epitech, je suis à San Francisco State University en Computer Science.
+En première année à Epitech, la majorité des projets sont développés en C, l'intégralité de mes projets mathématiques ont été développés en Python. J'ai également eu l'occasion de créer plusieurs VM.
+Lors de la seconde année à Epitech, j'ai appris la programation orientée Objet, cet apprentissage s'est fait essentiellement en le C++, mais j'ai eu aussi l'opportunitée de découvrir d'autre langage à travers divers projets Haskell, Python, Docker, React.
+La troisième année est basé sur la diversification, j'ai pu ainsi créer des projets complets , création de sites web avec la stack React/JS Dockerisé avec un Backend en NodeJs, serveur vocal en C++, application Mobile en Flutter. J'ai également appris d'autre framerwork backend comme NestJs, Flask.
+Durant la troisième année j'ai eu la chance de faire un stage de 4 mois chez Berny, ou j'ai travaillé sur un dashboard en react js avec un back en flask, sur plusieurs applications mobiles en Flutter.
+Par aillers durant l'intégralité de ma scolarité la majorité de mes projets étaient Dockerisés, testés, avec des github action et autres tests unitaires.

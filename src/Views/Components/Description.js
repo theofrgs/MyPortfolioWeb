@@ -16,11 +16,11 @@ const Description = () => {
                                 <img style={{ width: "10%", height: "10%" }} src="profil.png" alt="profil" />
                                 <Box sx={{ width: "10%" }} />
                                 <Box sx={{}}>
-                                    Originaire de La Rochelle, j'ai ,durant trois ans, commencé mes études dans l'informatique chez Epitech à Nantes avant d'aller effectuer ma quatrième année à San Francisco pour commencer 2 semestres à l'étranger en Computer Science.
+                                    Originaire de La Rochelle, j'ai fais mes trois première années d'études en informatique chez Epitech à Nantes avant d'aller effectuer ma quatrième année à san francsico et validé ainsi deux semestres à l'étranger en computer Science
                                     <div style={{ height: "10px" }} />
-                                    J'ai effectue plusieurs stages durant cette première période en études supérieur, un premier de six mois en développement 4D chez AlgoData en deuxième année puis un second de quatre mois chez Berny en fin de troisième année.
+                                    J'ai effectue plusieurs stages durant cette première période d'études supérieures, un premier de six mois en développement 4D chez AlgoData en deuxième année puis un second de quatre mois chez Berny en fin de troisième année.
                                     <div style={{ height: "10px" }} />
-                                    Détenteur d'un bachelor je suis développeur fullstack, principalement web avec la stack React/Js, je possède également 4 mois d'expérience avec le développement mobile en Flutter.  Durant mon cursus chez Epitech j'ai eu l'opportunité de travailler avec d'autres langages tels que le C++, le C, le python, le haskell, le java ou bien le bash. Mes années à Epitech m'ont permis de gagner en autonomie et également appris à travailler en équipe suite à de nombreux projets de groupe.
+                                    Détenteur d'un bachelor je suis développeur fullstack, principalement web avec la stack React/Js, je possède également 4 mois d'expérience dans le développement mobile en Flutter. Durant mon cursus chez Epitech j'ai eu l'opportunité de travailler avec d'autres langages tels que le C++, le C, le python, le haskell, le java ou bien le bash. Mes années à Epitech m'ont permis de gagner en autonomie et également appris à travailler en équipe grâce à de nombreux projets de groupe.
                                 </Box>
                             </Box>
                         </Box>

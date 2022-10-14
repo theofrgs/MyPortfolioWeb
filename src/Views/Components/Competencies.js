@@ -99,17 +99,17 @@ const Comptencies = () => {
             </Box>
             <Box sx={{ width: "80%", margin: '100px', display: 'flex', flexDirection: 'row', alignContent: 'left', justifyContent: "space-between", color: "white" }}>
                 <Box component="span" sx={{ display: 'flex', flexDirection: 'column', p: 2, borderWidth: '0.8px', borderColor: 'white', borderStyle: 'solid',justifyContent: "center" }}>
-                    Actuellement en 4 années à Epitech, je suis à San Francisco State University en Computer Science.
+                    Actuellement en quatrième années à Epitech, je suis à San Francisco State University en Computer Science.
                     <div style={{height: "30px"}}/>
-                    En première année à Epitech, la majorité des projets sont développés en C, l'intégralité de mes projets mathématiques ont été développer en Python. J'ai également eu l'occasion de créer plusieurs VM.
+                    En première année à Epitech, la majorité des projets sont développés en C, l'intégralité de mes projets mathématiques ont été développés en Python. J'ai également eu l'occasion de créer plusieurs VM.
                     <div style={{height: "30px"}}/>
-                    Lors de la seconde année à Epitech, on apprend la programation orientée Objet, cet apprentissage est passé essentiellement à travers le C++, mais j'ai l'opportunitée de découvrir d'autre langage à travers divers projets Haskell, Python, Docker, React.
+                    Lors de la seconde année à Epitech, j'ai appris la programation orientée Objet, cet apprentissage s'est fait essentiellement en le C++, mais j'ai eu aussi l'opportunitée de découvrir d'autre langage à travers divers projets Haskell, Python, Docker, React.
                     <div style={{height: "30px"}}/>
-                    La troisième année à Epitech est basé sur la diversification, j'ai ainsi l'occasion de créer des projets assez complets , création de sites web avec la stack React/JS Dockerisé avec un Backend en NodeJs, serveur vocal en C++, application Mobile en Flutter. J'ai également pu apprendre d'autre framerwork backend comme NestJs, Flask.
+                    La troisième année est basé sur la diversification, j'ai pu ainsi créer des projets complets , création de sites web avec la stack React/JS Dockerisé avec un Backend en NodeJs, serveur vocal en C++, application Mobile en Flutter. J'ai également appris d'autre framerwork backend comme NestJs, Flask.
                     <div style={{height: "30px"}}/>
-                    Durant la troisième année j'ai eu la chance de faire un stage de 4 mois chez Berny, ou j'ai travaillé sur un dashboard en react js avec un back en flask, sur plusieurs applications mobile en flutter.
+                    Durant la troisième année j'ai eu la chance de faire un stage de 4 mois chez Berny, ou j'ai travaillé sur un dashboard en react js avec un back en flask, sur plusieurs applications mobiles en Flutter.
                     <div />
-                    Durant l'intégralité de ma scolarité la majorité de mes projets étaient Dockerisés, tester, avec des github action et des tests unitaires.
+                    Par aillers durant l'intégralité de ma scolarité la majorité de mes projets étaient Dockerisés, testés, avec des github action et autres tests unitaires.
                 </Box>
                 <Box component="span" sx={{ display: 'flex', flexDirection: 'column', p: 2, borderWidth: '0.8px', borderColor: 'white', borderStyle: 'solid' }}>
                     {Object.entries(data).slice(0, 5).map((it, key) => (
